@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <div id="header-container" style="background-image: url('./assets/GIF encabezado.gif'); background-size: cover; background-position: center; min-height: 120vh; background-color: #f5f5dc;">
+    <!-- light beige background -->
+    <nav id="desktop-nav" style="position: absolute; right: 0;">
+      <ul class="nav-links">
+        <li><a href="#herramientas">Herramientas</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#quienes-dirigimos">Experiencias</a></li>
+        <li><a href="#contactanos">Contacto</a></li>
+        <li>
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="./assets/linkedin.png" alt="LinkedIn" style="height: 24px; width: 24px; vertical-align: middle;">
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#herramientas" onclick="toggleMenu()">Herramientas</a></li>
+          <li><a href="#servicios" onclick="toggleMenu()">Servicios</a></li>
+          <li><a href="#nosotros" onclick="toggleMenu()">Nosotros</a></li>
+          <li><a href="#quienes-dirigimos" onclick="toggleMenu()">Experiencias</a></li>
+          <li><a href="#contactanos" onclick="toggleMenu()">Contacto</a></li>
+        </div>
+      </div>
+    </nav>  
+    <section id="profile">
+      <div class="section__text">
+        <img src="./assets/logohelice.png" alt="Logo Hélice Consultora" class="profile-logo">
+        <p class="section__text__p1">Comprendemos el entorno social y las emociones humanas mediante el uso de herramientas tecnológicas avanzadas.</p>
+        <img src="./assets/Gráfica flecha encabezado.png" alt="Arrow" class="curved-arrow">
+        <p class="section__text__p2">Procesamos y analizamos una variedad de datos, integrando las capacidades humanas con lo mejor de la tecnología.</p>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div id="herramientas">
+      <div class="left-column">
+        <h1 class="title">Nuestras<br>Herramientas</h1>
+        <div class="button-container-herramientas">
+          <a href="#" class="custom-button-herramientas">Emociones IA</a>
+          <a href="#" class="custom-button-herramientas">Soluciones e Impacto Social</a>
+          <a href="#" class="custom-button-herramientas">Levantamiento y Gestión de Datos</a>
+          <a href="#" class="custom-button-herramientas">Construcción de Instrumentos</a>
+        </div>
+      </div>
+      <div class="right-column">
+        <p>Ofrecemos propuestas personalizadas que se adapten a las necesidades de cada cliente.<br><br>
+           Transformamos grandes volúmenes de datos en métricas para tu empresa a través de nuestras herramientas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="emociones-ia">
+    <div class="emociones-left">
+      <h2 class="title">Emociones IA</h2>
+      <div class="button-container">
+        <div class="text-button">Observar las conductas emocionales y discursivas de las personas</div>
+        <div class="text-button">Análisis de medios afectivos (sentimientos en plataformas multimedia)</div>
+        <div class="text-button">Análisis relacional de los datos de sentimientos</div>
+        <div class="text-button">Medidas validadas</div>
+        <div class="text-button">Análisis de rostros para detectar emociones</div>
+      </div>
+    </div>
+    <div class="emociones-right">
+      <!-- Right column for the background image -->
+    </div>
+  </section>
+
+  <section id="soluciones-intervenciones">
+    <div class="intervenciones-left">
+      <h2 class="title">Soluciones e intervenciones sociales</h2>
+      <div class="button-container">
+        <div class="text-button">Diseño e implementación de estrategias para el desarrollo de programas sociales, educativos y culturales a nivel nacional</div>
+        <div class="text-button">Diseño e implementación de procesos comunitarios participativos</div>
+        <div class="text-button">Experiencia en la evaluación de programas mediante metodología experimental (RCT)</div>
+      </div>
+    </div>
+    <div class="intervenciones-right">
+      <!-- Right column for the background image -->
+    </div>
+  </section>
+
+  <section id="construccion-instrumentos">
+    <div class="instrumentos-left">
+      <h2 class="title">Construcción de Instrumentos</h2>
+      <div class="button-container">
+        <div class="text-button">Diseño de instrumentos cualitativos y cuantitativos sólidos y validados para diferentes grupos etarios facilitando la obtención de información precisa y relevante para la toma de decisiones</div>
+        <div class="text-button">Levantamiento de datos a través de tecnologías emergentes como análisis de sentimientos, diarios digitales, wearables, mapas participativos, realidad virtual, y sensores ambientales</div>
+      </div>
+    </div>
+    <div class="instrumentos-right">
+      <!-- Right column for the background image -->
+    </div>
+  </section>
+
+  <section id="levantamiento-gestion-datos">
+    <div class="datos-left">
+      <h2 class="title">Levantamiento y gestión de datos</h2>
+      <div class="button-container">
+        <div class="text-button">Definir métodos de recopilación de datos</div>
+        <div class="text-button">Seleccionar y asegurar plataformas de almacenamiento</div>
+        <div class="text-button">Organizar y optimizar la gestión de datos</div>
+        <div class="text-button">Desarrollar modelos de datos y preparar conjuntos para análisis, incluyendo la creación de tablas resumen y la agregación de datos</div>
+      </div>
+    </div>
+    <div class="datos-right">
+      <!-- Right column for the background image -->
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="left-column-servicios">
+      <h1 class="title">Servicios</h1>
+    </div>
+    <div class="right-column-servicios">
+      <p>Hélice combina herramientas tecnológicas avanzadas y experticia multidisciplinaria para ofrecer servicios que mejoran la comprensión del comportamiento humano.
+        <br><br>Ofrecemos una amplia gama de servicios, desde la evaluación de emociones en videos hasta análisis de expresiones faciales en tiempo real, adaptándonos a las necesidades específicas de nuestros clientes.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects-section">
+    <div class="projects-container">
+      <!-- Left Column Projects -->
+      <div class="projects-column-left">
+        <div class="project-item">
+          <h2 class="project-title">Revisión de material audiovisual</h2>
+          <img src="../assets/1.png" alt="Revisión de material audiovisual">
+          <img src="../assets/flecha despliegue servicios.png" alt="Arrow Icon" class="hover-arrow">
+          <p class="project-info">Analizamos contenido audiovisual para evaluar reacciones y emociones, utilizando IA, proporcionando insights valiosos para creadores y distribuidores de contenido.</p>
+        </div>
+        <div class="project-item">
+          <h2 class="project-title">Análisis y comportamiento de clientes con IA</h2>
+          <img src="../assets/4.png" alt="Análisis de campañas publicitarias y redes sociales">
+          <img src="../assets/flecha despliegue servicios.png" alt="Arrow Icon" class="hover-arrow">
+          <p class="project-info">Ayudamos a empresas a comprender mejor a sus clientes mediante el uso de inteligencia artificial para analizar comportamientos de compra y preferencias.</p>
+        </div>
+      </div>
+      <!-- Right Column Projects -->
+      <div class="projects-column-right">
+        <div class="project-item">
+          <h2 class="project-title">Análisis de campañas publicitarias y redes sociales</h2>
+          <img src="../assets/2.png" alt="Análisis y comportamiento de clientes con IA">
+          <img src="../assets/flecha despliegue servicios.png" alt="Arrow Icon" class="hover-arrow">
+          <p class="project-info">Examinamos campañas y actividades en redes sociales para identificar tendencias y emociones, ayudando a optimizar estrategias de marketing mediante el uso de inteligencia artificial.</p>
+        </div>
+        <div class="project-item">
+          <h2 class="project-title">Estudios e investigaciones</h2>
+          <img src="../assets/3.png" alt="Estudios e investigaciones">
+          <img src="../assets/flecha despliegue servicios.png" alt="Arrow Icon" class="hover-arrow">
+          <p class="project-info">Conducimos estudios multidisciplinarios utilizando técnicas cualitativas y cuantitativas, ofreciendo análisis profundos que apoyan la toma de decisiones y formulación de políticas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quienes-dirigimos">
+    <div class="left-column-dirigimos">
+      <h1 class="title">¿A quiénes nos dirigimos?</h1>
+      <br><br>
+      <h3 style="
+        font-family: 'DIN Alternate', sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 1.199;
+        letter-spacing: 0.21em;">
+        Sectores productivos de interés
+      </h3>
+    </div>
+    <div class="right-column-dirigimos">
+      <p class="dirigimos-text">En la actualidad vivimos en un mundo lleno de dispositivos interconectados y sistemas avanzados de IA, que influyen en el desarrollo de nuevas formas de ser y sentir de las personas.<br><br>En Hélice, adoptamos un enfoque integral que nos permite enfrentar y resolver estos desafíos de manera efectiva, ofreciendo soluciones adaptadas a diversos sectores productivos.</p>
+    </div>
+  </section>
+
+  <section id="quienes-gif">
+    <div id="header-container">
+      <nav id="desktop-nav"></nav>
+      <div class="gif-section-text gif-background" id="gif-text-one">
+        Educación<br>Industrias creativas
+      </div>
+      <div class="gif-section-text gif-background" id="gif-text-two">
+        Retail<br>Salud
+      </div>
+      <div class="gif-section-text gif-background" id="gif-text-three">
+        Planificación urbana<br>Publicidad
+      </div>
+      <div class="gif-section-text gif-background" id="gif-text-four">
+        Turismo<br>Medio ambiente<br>Otros
+      </div>
+    </div>
+  </section>
+
+  <section id="clientes">
+    <h1 class="title">Clientes</h1>
+    <div class="client-images">
+      <div class="client-image-container">
+        <img src="./assets/descarga.png" alt="Client 1" class="client-image">
+      </div>
+      <div class="client-image-container">
+        <img src="./assets/logo-vivelamusica-187x184.png" alt="Client 2" class="client-image">
+      </div>
+      <div class="client-image-container">
+        <img src="./assets/Fundacion-Presente-LOGO.svg" alt="Client 3" class="client-image">
+      </div>
+      <div class="client-image-container">
+        <img src="./assets/logov3.png" alt="Client 4" class="client-image">
+      </div>
+      <div class="client-image-container">
+        <img src="./assets/descarga (1).png" alt="Client 5" class="client-image">
+      </div>
+      <div class="client-image-container">
+        <img src="./assets/logoCEPI.png" alt="Client 6" class="client-image">
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <div class="left-column-nosotros">
+      <h1 class="title">Nosotros</h1>
+    </div>
+    <div class="right-column-nosotros">
+      <p>En la actualidad vivimos en un mundo lleno de dispositivos interconectados y sistemas avanzados de IA, que influyen en el desarrollo de nuevas formas de ser y sentir de las personas. En Hélice, adoptamos un enfoque integral que nos permite enfrentar y resolver estos desafíos de manera efectiva, ofreciendo soluciones adaptadas a diversos sectores productivos.</p>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="team-container">
+      <div class="team-image-container">
+        <img src="./assets/Pauli.png" alt="Paula Espinoza" class="team-image">
+        <p>Paula Espinoza</p>
+        <p>Directora</p>
+      </div>
+      <div class="team-image-container">
+        <img src="./assets/Rai.png" alt="Raimundo Burchardt" class="team-image">
+        <p>Raimundo Burchardt</p>
+        <p>Cientista de Datos</p>
+      </div>
+      <div class="team-image-container">
+        <img src="./assets/Dani.png" alt="Daniela Farías" class="team-image">
+        <p>Daniela Farías</p>
+        <p>Coordinadora de Proyectos</p>
+      </div>
+      <div class="team-image-container">
+        <img src="./assets/Mari.png" alt="Mariana Young" class="team-image">
+        <p>Mariana Young</p>
+        <p>Directora de arte</p>
+      </div>
+      <div class="team-image-container">
+        <img src="./assets/Cami.png" alt="Camila Farías" class="team-image">
+        <p>Camila Farías</p>
+        <p>Comunicaciones</p>
+      </div>
+      <div class="team-image-container">
+        <img src="./assets/Amanda.png" alt="Amanda Costa de la Paz" class="team-image">
+        <p>Amanda Costa de la Paz</p>
+        <p>Coordinadora de proyectos</p>
+      </div>
+      <div class="team-image-container">
+        <img src="./assets/Ignacio.png" alt="Ignacio Morales" class="team-image">
+        <p>Ignacio Morales</p>
+        <p>Analista multimedia</p>
+      </div>
+      <div class="team-image-container">
+        <img src="./assets/pame_.jpg" alt="Pamela Bravo" class="team-image">
+        <p>Pamela Bravo</p>
+        <p>Gerente Financiera</p>
+      </div>
+      <div class="team-image-container">
+        <img src="./assets/avatar_man.png" alt="Cristián Jara" class="team-image">
+        <p>Cristián Jara</p>
+        <p>Analista de datos</p>
+      </div>
+      <div class="team-image-container">
+        <img src="./assets/avatar_mujer.png" alt="Ludmila Drago" class="team-image">
+        <p>Ludmila Drago</p>
+        <p>Diseñadora</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contáctanos Section -->
+  <section id="contactanos">
+    <div class="left-column-contactanos">
+      <h1 class="title">Contáctanos</h1>
+    </div>
+    <div class="right-column-contactanos">
+      <p>¡Contáctanos para iniciar tu próximo proyecto!</p>
+      <p>Puedes enviarnos un correo electrónico a: <a href="mailto:hola@heliceconsultora.cl">hola@heliceconsultora.cl</a></p>
+      <p>Si deseas discutir un proyecto específico o recibir una cotización personalizada.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <nav class="footer-nav">
+      <ul class="footer-nav-links">
+        <li><a href="#herramientas" onclick="toggleMenu()">Herramientas</a></li>
+        <li><a href="#servicios" onclick="toggleMenu()">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#quienes-dirigimos">Experiencias</a></li>
+        <li><a href="#contactanos">Contacto</a></li>
+      </ul>
+    </nav>
+    <p>Copyright &#169; 2024 - Consultora Hélice. All Rights Reserved.</p>
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
